@@ -16,7 +16,6 @@ class HasPermission
      */
     public function handle(Request $request, Closure $next, $currentPermission)
     {
-        Log::alert($currentPermission);
         $role = auth()->user()->role;
 
         foreach ($role->permissions as $permission){
