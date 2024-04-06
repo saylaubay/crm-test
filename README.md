@@ -15,13 +15,18 @@ Requirements
 - For MySQL users: 5.7 or higher.
 
 ## Quick Start:
-$ git clone https://github.com/saylaubay/crm-test.git <br>
-$ composer install <br>
-php artisan migrate --seed
+$ git clone https://github.com/saylaubay/crm-test.git \
+$ cp .env.example .env \
+$ composer install \
+$ php artisan key:generate \
+$ php artisan migrate --seed
 
-##How to log in as admin:
+## DB design
+![alt text](db_design.png)
+
+## How to login as admin:
 - http(s)://crm.nukuslab.uz/login
 
 ## Initial Role and User
-- Role : admin
-- User : login: +998971234567 password: 123
+- Role : admin, manager. supervisor, deliveryman
+- User : admin:login: +998971234567 password: 123

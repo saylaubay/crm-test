@@ -19,7 +19,7 @@
                             <th>FirstName</th>
                             <th>LastName</th>
                             <th>Phone</th>
-                            <th>Role_id</th>
+                            <th>Role</th>
                             @check("USER_UPDATE")
                             <th></th>
                             @endcheck

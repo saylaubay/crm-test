@@ -20,15 +20,3 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('excel',[\App\Http\Controllers\OrderController::class, 'excel'])->name('excel');
-
-Route::get('test', function (){
-
-    $order = Order::find(1);
-
-    dd($order->deliveryman_id);
-
-
-
-//    return "987";
-});
