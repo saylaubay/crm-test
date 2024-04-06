@@ -35,7 +35,7 @@
                                 <td>{{$user->first_name}}</td>
                                 <td>{{$user->last_name}}</td>
                                 <td>{{$user->phone}}</td>
-                                <td>{{$user->role_id}}</td>
+                                <td>{{$user->role->name}}</td>
                                 @check("USER_UPDATE")
                                 <td>
                                     <a href="{{ route('users.edit', $user->id) }}" class="btn btn-warning btn-circle">
