@@ -23,7 +23,7 @@
                         </select>
 
                         <label class="mt-2" for="product">Products</label>
-                        <select required name="products" id="product" class="form-control" aria-label="Default select example">
+                        <select required name="product" id="product" class="form-control" aria-label="Default select example">
                             <option value="" selected>Open this select menu</option>
                             @foreach($products as $product)
                                 <option value="{{$product->id}}">{{$product->name}}</option>
